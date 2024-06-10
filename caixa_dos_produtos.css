@@ -1,0 +1,97 @@
+@media (max-width: 767px) {
+    .listagem .listagem-linha {
+        padding-top: 0px;
+    }
+
+    #corpo .listagem .listagem-linha>ul {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #corpo .listagem .listagem-linha li.span3 {
+        display: flex;
+        width: 45%;
+        margin: 8px;
+    }
+
+    .listagem.com-caixa .listagem-item {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    #corpo .listagem .listagem-item .info-produto .preco-produto .preco-promocional {
+        font-size: 14px !important;
+    }
+
+    #corpo .listagem .listagem-item .info-produto .preco-produto .desconto-a-vista strong {
+        font-size: 20px !important;
+    }
+}
+
+#corpo .listagem .listagem-linha>ul {
+    display: flex;
+}
+
+.listagem.com-caixa .listagem-item {
+    box-shadow: none;
+    border: none;
+}
+
+#corpo .listagem .listagem-linha li.span3 {
+    box-shadow: 2px 2px 5px #ddd;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.listagem.com-caixa .listagem-item:hover,
+.listagem.com-caixa .listagem-item:active {
+    box-shadow: none;
+    outline: none;
+}
+
+#corpo .listagem .listagem-item .info-produto .nome-produto {
+    color: #000;
+}
+
+/*Personalizando campo de preço*/
+#corpo .listagem .listagem-item .info-produto .preco-produto .preco-parcela:before {
+    content: " ";
+}
+
+#corpo .listagem .listagem-item .info-produto .preco-produto .preco-promocional {
+    font-weight: 700;
+    color: #222;
+    font-size: 1em !important;
+}
+
+#corpo .listagem .listagem-item .info-produto .preco-produto .preco-parcela strong {
+    font-weight: bold;
+    color: #222;
+}
+
+#corpo .listagem .listagem-item .info-produto .preco-produto .desconto-a-vista strong {
+    font-weight: 700;
+    font-size: 26px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+
+#corpo .listagem .listagem-item .info-produto .preco-produto .desconto-a-vista {
+    background-color: var(--cor-principal);
+    padding: 5px;
+    margin: 10px -5px 0px -5px;
+    color: #eee;
+    font-size: 1.1em;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.listagem .info-produto {
+    padding: 15px 5px 00px;
+}

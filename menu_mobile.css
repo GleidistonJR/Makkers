@@ -1,0 +1,47 @@
+@media screen and (max-width: 767px) {
+    #cabecalho .logo>a {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+
+    #cabecalho .logo img {
+        margin: 5px;
+        z-index: 999;
+    }
+    #cabecalho>.conteiner .main-header .conteudo-topo .actions-menu .menu-carrinho .carrinho>a {
+        position: fixed;
+        right: 45px;
+    }
+    #cabecalho>.conteiner .main-header .conteudo-topo .actions-menu .visible-phone {
+        display: none !important;
+    }
+    #cabecalho>.conteiner .main-header .conteudo-topo .actions-menu .menu-login a {
+        position: fixed;
+        top: 8px;
+        right: 100px;
+        z-index: 999;
+    }
+    #cabecalho>.conteiner .main-header .conteudo-topo .actions-menu {
+        margin-top: 25px;
+    }
+    #cabecalho>.conteiner .main-header .conteudo-topo .actions-menu>* .carrinho>a>i, #cabecalho>.conteiner .main-header .conteudo-topo .actions-menu>*>a>i, #cabecalho>.conteiner .main-header .conteudo-topo .actions-menu>.busca>i {
+        width: 40px;
+        height: 40px;
+    }
+    #cabecalho>.conteiner .main-header .conteudo-topo .actions-menu .menu-carrinho .carrinho>a .icon-shopping-cart {
+        width: 40px;
+    }
+    #cabecalho:before {
+        display: none;
+    }
+    .fundo-branco-header{
+        width: 100%;
+        height: 70px;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+    }
+}

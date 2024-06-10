@@ -1,0 +1,26 @@
+#rodape .institucional {
+    padding-bottom: 45px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #47BB96 !important;
+    color: #fff;
+}
+#rodape .institucional ul, #rodape .institucional ul li {
+    list-style: none;
+    color: #fefefe;
+}
+#rodape .institucional ul li>a:before {
+    content: "\f054";
+    display: block;
+    float: left;
+    margin-right: 5px;
+    color: #fff;
+    font-family: FontAwesome-v4;
+}
+#rodape .institucional .titulo {
+    color: #fff;
+}
+#corpo .listagem .listagem-item .info-produto .preco-produto .preco-promocional, #corpo .listagem .listagem-item .info-produto .preco-produto .preco-venda{font-size: 22px;}
+.produto .acoes-produto .preco-produto .titulo {
+    font-size: 22px;
+}
