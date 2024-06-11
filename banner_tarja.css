@@ -1,41 +1,40 @@
 #features-recartes {
     display: flex;
     margin-top: 20px;
-}
-
-#features-recartes .d-flex {
-    display: flex;
+    justify-content: center;
 }
 
 #features-recartes .feature-item {
+    display: flex;
     padding: 15px;
 }
 
 #features-recartes .feature-item a {
     display: flex;
-    text-decoration: none;  
+    text-decoration: none;
 }
+
 #features-recartes .feature-item i {
     font-size: 40px;
     color: #3ec1ac;
-    }
+}
 
 #features-recartes .feature-item div {
     padding: 0 10px;
 }
 
 #features-recartes .feature-item h4 {
-    font-size: 20px;
+    font-size: 14px;
     margin: 0;
-    color: #212529;
+    color: #333;
 }
 
 #features-recartes .feature-item p {
-    font-size: 14px;
-    color: #212529;
+    font-size: 13px;
+    color: #333;
 }
 
-@media (max-width: 1400px) and (min-width: 767px){
+@media (max-width: 1400px) and (min-width: 767px) {
     #cabecalho .menu.superior .nivel-um>li>a {
         padding: 0 20px;
         font-size: 14px;
@@ -50,25 +49,39 @@
     }
 
     #features-recartes .feature-item {
-        padding: 10px 5px;
-        max-width: 200px;
+        padding: 15px;
     }
 
     #features-recartes .feature-item div {
-        padding: 0px 5px;
+        padding: 0px 10px;
     }
 
     #features-recartes .feature-item i {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     #features-recartes .feature-item h4 {
-        font-size: 18px;
+        font-size: 14px;
         margin: 0;
     }
 
     #features-recartes .feature-item p {
-        font-size: 13px;
+        font-size: 11px;
+    }
+
+}
+
+@media (max-width: 360px) {
+    #features-recartes .feature-item {
+        padding: 10px 5px;
+        max-width: 160px;
+    }
+    #features-recartes .feature-item h4 {
+        font-size: 12px;
+        margin: 0;
+    }
+    #features-recartes .feature-item p {
+        font-size: 10px;
     }
 
 }
