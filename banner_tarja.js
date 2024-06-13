@@ -19,13 +19,27 @@ var codigo = `
             </div>
         </div>
         <div class="feature-item d-flex">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#modalEnvioMesmoDia">
+            <a href="#" id="openModalBtnMakkers">
                 <i class="bi bi-box"></i>
                 <div>
                     <h4>Envio no <br> mesmo dia</h4>
                     <p>pedidos até as 14h30</p>
                 </div>
             </a>
+            <div id="myModalMakkers" class="modalMakkers">
+                <div class="modal-contentMakkers">
+                    <span class="closeMakkers">&times;</span>
+                    <h3>Envio no mesmo dia</h3>
+                    <hr>
+                    <p><b>Motoboy:</b> Para pedidos com pagamentos confirmados até 14h30 em Goiânia</p>
+                    <p><b>Transportadoras:</b> Para pedidos com pagamentos confirmados até 14h30 envios para todo o
+                        Brasil </p>
+                    <br>
+                    <p><b>Válido de segunda à sexta para pedidos cujos pagamentos sejam confirmados até os respectivos
+                            horários
+                            informados.</b></p>
+                </div>
+            </div>
         </div>
         <div class="feature-item d-flex">
             <i class="bi bi-tools"></i>
@@ -43,21 +57,34 @@ var codigo = `
         </div>
     </section>
 
-    <div class="modal fade" id="modalEnvioMesmoDia" tabindex="-1" aria-labelledby="modalEnvioMesmoDiaLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="modalEnvioMesmoDiaLabel">Envio no mesmo dia</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    Para pedidos com pagamentos confirmados até 14h30
-                </div>
-            </div>
-        </div>
-    </div>
+
+
     `
-    
-    bannerPrincipal.insertAdjacentHTML('afterend', codigo);
-    
+
+bannerPrincipal.innerHTML += codigo;  // Adiciona o HTML ao DOM
+
+// Pega o modal
+var modal = document.getElementById("myModalMakkers");
+
+// Pega o botão que abre o modal
+var btn = document.getElementById("openModalBtnMakkers");
+
+// Pega o elemento <span> que fecha o modal
+var span = document.getElementsByClassName("closeMakkers")[0];
+
+// Quando o usuário clicar no botão, abre o modal
+btn.onclick = function () {
+    modal.style.display = "block";
+}
+
+// Quando o usuário clicar em <span> (x), fecha o modal
+span.onclick = function () {
+    modal.style.display = "none";
+}
+
+// Quando o usuário clicar fora do modal, fecha o modal
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}

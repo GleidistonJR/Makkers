@@ -21,6 +21,15 @@
         border: 1px solid #ddd;
     }
 
+    .listagem .listagem-item {
+        margin: 0;
+    }
+
+    .listagem .listagem-item .info-produto {
+        margin: 0;
+        width: 100%;
+    }
+
     #corpo .listagem .listagem-item .info-produto .preco-produto .preco-promocional {
         font-size: 14px !important;
     }
@@ -37,6 +46,15 @@
 .listagem.com-caixa .listagem-item {
     box-shadow: none;
     border: none;
+    max-width: none;
+}
+
+.listagem .info-produto {
+    padding: 0;
+}
+
+#corpo .listagem .listagem-item .imagem-produto {
+    width: 100%;
 }
 
 #corpo .listagem .listagem-linha li.span3 {
@@ -54,7 +72,12 @@
 }
 
 #corpo .listagem .listagem-item .info-produto .nome-produto {
-    color: #000;
+    color: #333;
+    padding: 0 5px;
+}
+
+#corpo .listagem .listagem-item .info-produto .preco-produto .preco-parcela {
+    padding: 0 5px;
 }
 
 /*Personalizando campo de preço*/
@@ -66,6 +89,7 @@
     font-weight: 700;
     color: #222;
     font-size: 1em !important;
+    padding: 0 5px;
 }
 
 #corpo .listagem .listagem-item .info-produto .preco-produto .preco-parcela strong {
@@ -83,7 +107,7 @@
 #corpo .listagem .listagem-item .info-produto .preco-produto .desconto-a-vista {
     background-color: var(--cor-principal);
     padding: 5px;
-    margin: 10px -5px 0px -5px;
+    margin: 0;
     color: #eee;
     font-size: 1.1em;
     border-radius: 0 0 5px 5px;
@@ -92,6 +116,11 @@
     justify-content: space-evenly;
 }
 
-.listagem .info-produto {
-    padding: 15px 5px 00px;
+ol,
+ul {
+    padding-left: 0 !important;
+}
+
+a {
+    text-decoration: none !important;
 }

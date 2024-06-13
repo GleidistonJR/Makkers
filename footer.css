@@ -1,0 +1,40 @@
+#rodape .institucional {
+    background: #3EC1AC;
+    color: #eee;
+}
+
+#rodape .institucional .contact-data ul li a i {
+    color: #eee;
+}
+
+#rodape .institucional ul li>a:before {
+    color: #fff;
+}
+
+#rodape .institucional .titulo {
+    color: #fff;
+    font-size: 22px;
+}
+
+#rodape .institucional a {
+    color: inherit;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#rodape .institucional>.conteiner .span9>.row-fluid>.span4 p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #eee;
+}
+
+#rodape .institucional .redes-sociais>.titulo {
+    font-size: 22px;
+    display: block;
+}
+
+@media screen and (max-width: 767px) {
+    #rodape .institucional>.conteiner>.row-fluid>.span3 {
+        display: block;
+    }
+}
