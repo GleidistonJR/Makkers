@@ -116,6 +116,12 @@
     justify-content: space-evenly;
 }
 
+.listagem-item.indisponivel, .listagem.com-caixa .listagem-item.indisponivel {
+    overflow: hidden;
+    background-color: rgb(62, 193, 172, 0.3);
+    height: 100%;
+}
+
 ol,
 ul {
     padding-left: 0 !important;
