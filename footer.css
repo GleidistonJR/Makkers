@@ -32,9 +32,26 @@
     font-size: 22px;
     display: block;
 }
-
 @media screen and (max-width: 767px) {
     #rodape .institucional>.conteiner>.row-fluid>.span3 {
         display: block;
     }
+}
+
+
+/*---------------------------
+Desenvolvedores
+----------------------------*/ 
+
+.logo-recartes-makkers{
+    display: inline-block;
+}
+.logo-recartes-makkers h3{
+    font-size: 16px;
+    color: #aaa;
+    margin: 0;
+}
+.logo-recartes-makkers svg{
+    width: 120px;
+    height: 100%;
 }

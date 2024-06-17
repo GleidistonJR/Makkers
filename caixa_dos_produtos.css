@@ -39,6 +39,19 @@
     }
 }
 
+/*--------------------------------
+Titulo
+--------------------------------*/
+#corpo .listagem#listagemProdutos .titulo-categoria:first-of-type {
+    padding-top: 0px;
+}
+#corpo .listagem#listagemProdutos .titulo-categoria {
+    margin: 100px 0 35px 0px;
+}
+/*--------------------------------
+Corpo
+--------------------------------*/
+
 #corpo .listagem .listagem-linha>ul {
     display: flex;
 }
@@ -129,4 +142,11 @@ ul {
 
 a {
     text-decoration: none !important;
+}
+
+/*-----------------------------------------------
+Setas
+-----------------------------------------------*/
+#corpo .listagem#listagemProdutos .titulo-categoria i {
+    display: none;
 }
