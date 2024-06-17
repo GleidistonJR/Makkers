@@ -10,16 +10,25 @@ card.forEach(function (carditem) {
 
     // Iterar sobre as classes encontradas
     classesDesconto.forEach(function (elemento) {
+        //retirando texto 'ou' 
         for (var i = 0; i < elemento.childNodes.length; i++) {
             var node = elemento.childNodes[i];
-
-
             // Verificar se o nó é de texto
             if (node.nodeType === Node.TEXT_NODE) {
                 // Alterar o conteúdo do nó de texto
                 node.textContent = '';
             }
         }
+
+        /*Separando R$
+        var palavra = "R$"
+        var strongPreco = elemento.querySelector('strong')
+        var strongPrecoText = strongPreco.textContent 
+        console.log(strongPrecoText)
+        var encapsulado = strongPrecoText.replace(new RegExp(palavra, 'gi'), '<span class="sifrao-makkers">' + palavra + '</span>');
+        elemento.innerHTML += encapsulado;
+*/
+        
         elemento.innerHTML += ` 
         <?xml version="1.0" encoding="UTF-8"?>
         <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
