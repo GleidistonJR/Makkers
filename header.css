@@ -70,3 +70,7 @@
 #cabecalho .logo a {
     transition: .3s;
 }
+#cabecalho>.conteiner {
+    border-bottom: 2px solid #ffa500;
+    box-shadow: none;
+}
