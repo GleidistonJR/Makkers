@@ -89,7 +89,8 @@ Corpo
     padding: 0 5px;
 }
 
-#corpo .listagem .listagem-item .info-produto .preco-produto .preco-parcela {
+#corpo .listagem .listagem-item .info-produto .preco-produto>div {
+    margin: 0;
     padding: 0 5px;
 }
 
