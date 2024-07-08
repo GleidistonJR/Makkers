@@ -10,8 +10,8 @@ institucional.innerHTML = `
                         <ul>
                             <li>
                                 <a href="https://maps.app.goo.gl/yf3hJZ7VpJVsCeFx6" target="_blank">Av. Wenceslau
-                                    Braz 85°<br>
-                                    Vila Anchieta - Goiânia/GO<br>
+                                    Braz n85<br>
+                                    Vila Anchieta - Goiânia-GO<br>
                                     CEP 74320-385</a>
                             </li>
                         </ul>
