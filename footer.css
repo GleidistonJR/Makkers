@@ -8,7 +8,7 @@
 }
 
 #rodape .institucional ul li>a:before {
-    color: #fff;
+    display: none;
 }
 
 #rodape .institucional .titulo {
@@ -18,7 +18,7 @@
 
 #rodape .institucional a {
     color: inherit;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -32,26 +32,39 @@
     font-size: 22px;
     display: block;
 }
+
 @media screen and (max-width: 767px) {
     #rodape .institucional>.conteiner>.row-fluid>.span3 {
         display: block;
+    }
+
+    #rodape .institucional>.conteiner>.row-fluid {
+        text-align: center;
+    }
+    #rodape .institucional .redes-sociais {
+        width: 100%;
+    }
+    #rodape .institucional .redes-sociais a{
+        justify-content: center;
     }
 }
 
 
 /*---------------------------
 Desenvolvedores
-----------------------------*/ 
+----------------------------*/
 
-.logo-recartes-makkers{
+.logo-recartes-makkers {
     display: inline-block;
 }
-.logo-recartes-makkers h3{
+
+.logo-recartes-makkers h3 {
     font-size: 16px;
     color: #aaa;
     margin: 0;
 }
-.logo-recartes-makkers svg{
+
+.logo-recartes-makkers svg {
     width: 120px;
     height: 100%;
 }

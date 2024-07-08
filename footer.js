@@ -1,16 +1,124 @@
-var redeSocialDiv = document.querySelector('.redes-sociais')
+var institucional = document.querySelector('.institucional')
 
-redeSocialDiv.innerHTML = `
-<span class="titulo cor-secundaria">Social</span>
+institucional.innerHTML = `
+   <div class="conteiner">
+        <div class="row-fluid d-flex">
+            <div class="span9">
+                <div class="row-fluid d-flex">
+                    <div class="span3 local-Makkers">
+                        <span class="titulo cor-secundaria">Makkers</span>
+                        <ul>
+                            <li>
+                                <a href="https://maps.app.goo.gl/yf3hJZ7VpJVsCeFx6" target="_blank">Av. Wenceslau
+                                    Braz 85°<br>
+                                    Vila Anchieta - Goiânia/GO<br>
+                                    CEP 74320-385</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="span3 links-rodape links-rodape-categorias">
+                        <span class="titulo cor-secundaria">Categorias</span>
+                        <ul class=" total-itens_7">
+                            <li>
+                                <a href="https://www.makkers.com.br/arduino">
+                                    Arduino
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.makkers.com.br/wireless-e-iot">
+                                    IoT
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.makkers.com.br/rob-tica">
+                                    Robótica
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.makkers.com.br/componentes-eletronicos-22778990">
+                                    Componentes Eletrônicos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.makkers.com.br/impressao-3d">
+                                    3D e CNC
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.makkers.com.br/prototipagem-e-ferramentas">
+                                    Ferramentas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.makkers.com.br/prototipagem">
+                                    Prototipagem
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-<a href="https://www.instagram.com/makkers_iot" target="_blank" style="display: flex; align-items: center; padding: 5px 0;">
-    <i class="bi bi-instagram" style="font-size: 24px; margin-right: 5px;"></i>
-    <p style="margin: 0;">@Makkers_iot</p>
-</a>
-<a href="https://www.youtube.com/@Makkers_iot" target="_blank" style="display: flex; align-items: center; padding: 5px 0;"">
-    <i class="bi bi-youtube" style="font-size: 24px; margin-right: 5px;"></i>
-    <p style="margin: 0;">Makkers_iot</p>
-</a>
+
+                    <div class="span3 links-rodape links-rodape-paginas">
+                        <span class="titulo cor-secundaria">Conteúdo</span>
+                        <ul>
+                            <li><a href="#modalContato" data-toggle="modal" data-target="#modalContato">Fale
+                                    Conosco</a></li>
+
+                            <li><a href="https://www.makkers.com.br/pagina/politica-de-frete.html">Política de
+                                    Frete</a></li>
+
+                            <li><a href="https://www.makkers.com.br/pagina/politica-de-pagamento.html">Política de
+                                    pagamento</a></li>
+
+                            <li><a href="https://www.makkers.com.br/pagina/politica-de-privacidade.html">Política de
+                                    privacidade</a></li>
+
+                            <li><a href="https://www.makkers.com.br/pagina/politica-de-trocas-e-devolucoes.html">Política
+                                    de Trocas e Devoluções</a></li>
+
+                            <li><a href="https://www.makkers.com.br/pagina/quem-somos.html">Quem somos</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="span3 sobre-loja-rodape">
+                        <span class="titulo cor-secundaria">Atendimento</span>
+                        <ul>
+                            <li>
+                                <a href="tel:(62) 3210-8230"><i class="icon-phone"></i> Telefone <strong>(62)
+                                        3210-8230</strong></a>
+                            </li>
+                            <li class="tel-whatsapp">
+                                <a href="https://api.whatsapp.com/send?phone=5562991925774" target="_blank"><i
+                                        class="fa fa-whatsapp"></i> Whatsapp <strong>(62) 99192-5774</strong></a>
+                            </li>
+                            <li>
+                                <a href="mailto:loja@makkers.com.br"><i
+                                        class="fa fa-envelope"></i> loja@makkers.com.br</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--googleoff: all-->
+            <div class="span3">
+                <div class="redes-sociais borda-principal">
+                    <span class="titulo cor-secundaria">Social</span>
+                    <a href="https://www.instagram.com/makkers_iot" target="_blank"
+                        style="display: flex; align-items: center; padding: 5px 0;">
+                        <i class="bi bi-instagram" style="font-size: 24px; margin-right: 5px;"></i>
+                        <p style="margin: 0;">@Makkers_iot</p>
+                    </a>
+                    <a href="https://www.youtube.com/@Makkers_iot" target="_blank"
+                        style="display: flex; align-items: center; padding: 5px 0;" "="">
+                            <i class=" bi bi-youtube" style="font-size: 24px; margin-right: 5px;"></i>
+                        <p style="margin: 0;">Makkers_iot</p>
+                    </a>
+                </div>
+            </div>
+            <!--googleon: all-->
+        </div>
+    </div>
 `
 
 
